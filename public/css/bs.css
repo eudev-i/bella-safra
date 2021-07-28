@@ -1,0 +1,51 @@
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 125px; 
+    margin-top: 21px;
+}
+
+.cartao-produto {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+}
+
+.imagem-produto img {
+      width: 200px;  
+}
+
+.cartao-produto {
+      align-items: center;
+}
+
+.info-produto {
+      text-align: center;
+      margin-top: auto;
+}
+
+.filtros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    color: red;
+}
+
+h5 {
+    color: red;
+    text-transform: uppercase;
+}
+
+@media (max-width: 465px) {
+    .cartao-produto {
+      flex: 1 46%;
+    }
+
+    .filtros {
+        display: none;
+    }
+  }
