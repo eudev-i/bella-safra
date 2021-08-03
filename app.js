@@ -14,4 +14,12 @@ app.get('/bellasafra', (req,res)=> {
     res.sendFile(__dirname + "/views/bellasafra.html")
 });
 
-app.listen(3000);
+app.get('/detalhes', (req,res)=> {
+    res.sendFile(__dirname + "/views/detalhes.html")
+});
+
+app.get('/login', (req,res)=> {
+    res.sendFile(__dirname + "/views/login.html")
+});
+
+app.listen(3000, ( ) => console.log("Servidor foi iniciado"));
